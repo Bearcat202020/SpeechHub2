@@ -1,0 +1,11 @@
+//-header:
+  //this is the pug website code for the error page
+doctype html
+html
+include navbar.pug
+
+//- gives the error
+body
+  h1= message
+  h2= error.status
+  pre #{error.stack}

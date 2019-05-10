@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="javascripts/website.js"></script>
+
+
+<title>Ballots - Speech Hub</title>
+
+</head>
+<br><br>
+<div class="container">
+	<h1>Ballots</h1>
+  <h2>Here is where your tournament ballots should show up</h2>
+  <table class="table table-striped" id="BallotTable">
+    <thead>
+      <tr>
+        <th>Tournament</th>
+        <th>Round</th>
+        <th>Feedback</th>
+				<th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tournament #1</td>
+        <td>Round 1</td>
+        <td>I liked the speech</td>
+				<td>10:04</td>
+      </tr>
+      <tr>
+        <td>Tournament #1</td>
+        <td>Round 2</td>
+        <td>change everything please</td>
+				<td>9:58</td>
+      </tr>
+      <tr>
+        <td>Tournament #1</td>
+        <td>Finals</td>
+        <td>slow down</td>
+				<td>10:01</td>
+      </tr>
+    </tbody>
+  </table>
+	 <textarea class="form-control" id="FeedbackBox" rows="2"></textarea>
+<button type="button" class="btn btn-secondary" onclick="addFeedback()">Add Feedback</button>
+</div>
+
+
+
+
+
+</html>

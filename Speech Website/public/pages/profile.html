@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="stylesheets/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Profile - Speech Hub</title>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+	<a href="profile" class="btn btn-info btn-lg">
+      <span class="glyphicon glyphicon-user"></span> YOU
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="practices">Practices</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ballots">Ballots</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="calendar">Calendar</a>
+      </li>-->
+
+    </ul>
+  </div>
+</nav>
+</head>
+<br>
+<body>
+	<div class="container">
+	  <div class="row">
+	    <div class="col">
+	    </div>
+	    <div class="col-6" >
+	      <h1 id="ProfileHeader">Your Profile</h1><img id="DefaultProfile" src="imagesc/profile.png"></img>
+				<br>
+				<h6>Here's another fun thing. Input the amount of people in your event, how many people break, and the amount of prelims there are, and this should tell you what ranks you need to break: </h3>
+				<div class="input-group input-group-sm mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-sm">Entries</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="entries">
+				</div>
+				<div class="input-group input-group-sm mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-sm">Breaks To:</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="breaks">
+				</div>
+				<div class="input-group input-group-sm mb-3">
+					  <div class="input-group-prepend">
+					    <span class="input-group-text" id="inputGroup-sizing-sm">Prelim Rounds</span>
+					  </div>
+					  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="prelims">
+				</div>
+				<button type="button" class="btn btn-secondary" onclick="calculate()">Calculate</button>
+				<h4 id="result"></h4>
+				<div class="card" style="width: 18rem;">
+  				<div class="card-header">
+    				Upcoming Tournaments:
+  				</div>
+  					<ul class="list-group list-group-flush">
+    					<li class="list-group-item">Tournament #4<a href="#"><br>Click here for details</a></li>
+    					<li class="list-group-item">State Championships<a href="#"><br>Click here for details</a></li>
+    					<li class="list-group-item">National Qualifiers<a href="#"><br>Click here for details</a></li>
+  				</ul>
+				</div>
+				<br>
+				<div class="card" style="width: 18rem;">
+					<div class="card-header">
+						Past Tournaments:
+					</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Tournament #1<a href="#"><br>Click here for details</a></li>
+    					<li class="list-group-item">Tournament #2<a href="#"><br>Click here for details</a></li>
+							<li class="list-group-item">Tournament #3<a href="#"><br>Click here for details</a></li>
+					</ul>
+				</div>
+				<br>
+				<div class="card" style="width: 18rem;">
+					<div class="card-header">
+						Practices:
+					</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">1/17/2019<a href="#"><br>Click here for notes</a></li>
+    					<li class="list-group-item">1/1/2019<a href="#"><br>Click here for notes</a></li>
+    					<li class="list-group-item">12/12/2018<a href="#"><br>Click here for notes</a></li>
+					</ul>
+				</div>
+
+	    </div>
+	    <div class="col">
+	    </div>
+	  </div>
+
+	</div>
+
+
+
+
+</body>
+<script src="javascripts/website.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </html>

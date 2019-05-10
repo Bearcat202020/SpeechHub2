@@ -1,0 +1,25 @@
+//-header:
+  //this is the pug website code for the feedback page
+doctype html
+html
+include navbar.pug
+
+body
+  .container
+  h1 Practices
+  //- 
+    this is the form that allows you to enter feedback and posts it to the create
+    you can input a student name, coach, date, feedback, and category
+  br
+  form(action='/create', method='post')
+    | Name: 
+    input(type='string', name='studID' )
+    | Coach:
+    input(type='string', name='coachID' autocomplete="off")
+    | Date: 
+    input(type='date', name='date' autocomplete="off")
+    | Feedback: 
+    input(type='string', name='feedback' autocomplete="off")
+    | Category: 
+    input(type='string', name='category' autocomplete="off")
+    input(type='submit', value='Submit')

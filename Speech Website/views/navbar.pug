@@ -1,0 +1,37 @@
+//-header:
+  //this is the template for the navbar at the top of each website
+head
+  // Latest compiled and minified CSS
+  link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+  script(src='javascripts/website.js')
+  title Speech Hub
+body
+  //- 
+    this is the navbar with all the links 
+      redirects you to other pags
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    a.btn.btn-info.btn-lg(href='profile')
+      span.glyphicon.glyphicon-user
+      |  YOU
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='/')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='practices') Practices
+        //li.nav-item
+          a.nav-link(href='ballots') Ballots
+        li.nav-item
+            a.nav-link(href='feedback') Feedback
+        li.nav-item
+          if locals.user
+            a.nav-link(href='/logout') Logout
+          else
+            a.nav-link(href='/login') Login
+        

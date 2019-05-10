@@ -1,0 +1,16 @@
+//-header:
+  //this is the pug website code for the user page
+doctype html
+html
+include navbar.pug
+  //-
+    THIS PAGE IS COMPLETELY OBSOLETE IT IS NOT USED ANYMORE
+body
+  .w3-card-4
+    h1 Welcome #{user.emails[0].value}
+    img(src=user.picture)
+    h2 User profile
+    p This is the content of <code>req.user</code>.
+    p Note: <code>_raw</code> and <code>_json</code> properties have been ommited.
+    pre
+      code #{userProfile}

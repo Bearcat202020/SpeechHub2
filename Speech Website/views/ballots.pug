@@ -1,0 +1,54 @@
+//-header:
+  //this is the pug website code for the ballots page
+doctype html
+html
+include navbar.pug
+
+body(onload='test()')
+  .container
+  h1 Practices
+  //-
+    this is the ballots page that loads up once you go to your practices 
+    it takes all the data that is fed into it and displays it nicely in a table
+  script.
+    function test(){
+      for(var i = 0; i < #{coach.length}; i++){        
+        if(i == 0){
+        $('#myTable').append('<tr><td>#{coach[0]}</td><td>#{date[0]}</td><td>#{feedback[0]}</td><td>#{category[0]}</td></tr>')
+        }
+        if(i == 1){
+        $('#myTable').append('<tr><td>#{coach[1]}</td><td>#{date[1]}</td><td>#{feedback[1]}</td><td>#{category[1]}</td></tr>')
+        }
+        if(i == 2){
+        $('#myTable').append('<tr><td>#{coach[2]}</td><td>#{date[2]}</td><td>#{feedback[2]}</td><td>#{category[2]}</td></tr>')
+        }
+        if(i == 3){
+        $('#myTable').append('<tr><td>#{coach[3]}</td><td>#{date[3]}</td><td>#{feedback[3]}</td><td>#{category[3]}</td></tr>')
+        }
+        if(i == 4){
+        $('#myTable').append('<tr><td>#{coach[4]}</td><td>#{date[4]}</td><td>#{feedback[4]}</td><td>#{category[4]}</td></tr>')
+        }
+        if(i == 5){
+        $('#myTable').append('<tr><td>#{coach[5]}</td><td>#{date[5]}</td><td>#{feedback[5]}</td><td>#{category[5]}</td></tr>')
+        }
+        if(i == 6){
+        $('#myTable').append('<tr><td>#{coach[6]}</td><td>#{date[6]}</td><td>#{feedback[6]}</td><td>#{category[6]}</td></tr>')
+        }
+        if(i == 7){
+        $('#myTable').append('<tr><td>#{coach[7]}</td><td>#{date[7]}</td><td>#{feedback[7]}</td><td>#{category[7]}</td></tr>')
+        }
+      }
+    }
+  //- 
+    this is the table that allows you to input data
+  table#myTable.table.table-striped
+    thead
+        tr
+        th Coach
+        th Date
+        th Comment
+        th Category
+    tbody
+        
+        
+    

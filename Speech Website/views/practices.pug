@@ -1,0 +1,36 @@
+//-header:
+  //this is the pug website code for the practices page
+doctype html
+html
+include navbar.pug
+
+ //-
+  this was just a static page to demo the project initially
+body
+  .container
+  h1 Practices
+  h2 Here is where your practice notes should show up
+  table.table.table-striped
+    thead
+        tr
+        th Coach
+        th Date
+        th Comment
+        th Category
+    tbody
+        tr
+        td Ian
+        td 10/10/18
+        td make your delivery better please
+        td Delivery
+        tr
+        td Bill
+        td 11/11/18
+        td make your content better please
+        td Content
+        tr
+        td Jen
+        td 12/12/18
+        td make your evidnece better please
+        td Evidence
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')

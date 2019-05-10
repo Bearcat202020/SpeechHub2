@@ -1,0 +1,84 @@
+//-header:
+  //this is the pug website code for the profile page
+doctype html
+html
+include navbar.pug
+
+body
+    .container
+      //- displays your name and your profile picture in your profile
+    h1.text-center Welcome #{user.name.givenName}!
+    img(src=user.picture)
+    br
+    br
+
+      
+    form(action='/read', method='post')
+      input(type='submit', value='PRACTICES!')    
+      //- this is the button you click for the post function to see ballots
+      br
+      br
+        
+      //-
+       this is the static code that displays your future tournaments
+      .card(style='width: 18rem;').center-block
+        .card-header
+          | Upcoming Tournaments:
+        ul.list-group.list-group-flush
+          li.list-group-item
+            | Tournament #4
+            a(href='#')
+              br
+              | Click here for details
+          li.list-group-item
+            | State Championships
+            a(href='#')
+              br
+              | Click here for details
+          li.list-group-item
+            | National Qualifiers
+            a(href='#')
+              br
+              | Click here for details
+      br
+      .card(style='width: 18rem;')
+        .card-header
+          | Past Tournaments:
+        ul.list-group.list-group-flush
+          li.list-group-item
+            | Tournament #1
+            a(href='#')
+              br
+              | Click here for details
+          li.list-group-item
+            | Tournament #2
+            a(href='#')
+              br
+              | Click here for details
+          li.list-group-item
+            | Tournament #3
+            a(href='#')
+              br
+              | Click here for details
+      br
+      .card(style='width: 18rem;')
+        .card-header
+          | Practices:
+        ul.list-group.list-group-flush
+          li.list-group-item
+            | 1/17/2019
+            a(href='#')
+              br
+              | Click here for notes
+          li.list-group-item
+            | 1/1/2019
+            a(href='#')
+              br
+              | Click here for notes
+          li.list-group-item
+            | 12/12/2018
+            a(href='#')
+              br
+              | Click here for notes
+    script(src='javascripts/website.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
