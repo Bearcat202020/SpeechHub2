@@ -11,8 +11,10 @@
 `mongod --dbpath ~/data/db`
 3. Then in a separate command prompt, go the directory and type
 `npm start `
+YOU SHOULD SEE THIS
+![alt text](https://github.com/Bearcat202020/SpeechHub2/blob/master/Speech%20Website/Screenshot_1.jpg)
 
-##Files and their descriptions
+## Files and their descriptions
 ### since there are like 1000 files from Auth0/express I'm only doing important ones
 1. app.js - main page for the website, contains all the requires, authentication, and the create/read functions
 2. users.js - manages the log in, handles the post that writes user emails into JSON
